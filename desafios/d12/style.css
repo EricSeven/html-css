@@ -69,6 +69,10 @@ section{
     font-size: 2em;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 /*responsividade section*/
 
 @media (max-width:700px){
@@ -89,12 +93,26 @@ section.normal{
 section.image{
     background-color: rgb(32, 32, 32);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.562);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.image p{
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.479);
+    text-shadow: 2px 1px 0px black;
+}
+
+#img01{
+    background-image: url('./img/background001.jpg');
+    background-position: right center;
+}
+
+#img02{
+    background-image: url('./img/background002.jpg');
+    background-position: right center;
 }
 
 footer {
