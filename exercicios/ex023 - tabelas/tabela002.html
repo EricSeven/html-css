@@ -18,12 +18,27 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: 549;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        /*efeito zebrado*/
+        tbody tr:nth-child(2n){  /*2n-1, odd, even*/
+            background-color: lightgray;
+        }
+
         .number{
             text-align: right;
         }
+
         img{
             width: 20px;
         }
+
         thead, tfoot{
             background-color: rgba(128, 128, 128, 0.589);
         }
@@ -35,6 +50,8 @@
     <!--
     Anatomia de Tabelas Grandes
 
+        CAPTION
+            Legenda/Título
         THEAD
             tr, td, th
         TBODY
@@ -44,10 +61,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -74,7 +92,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="number"><strong>106.590.486</strong></td>
             </tr>
         </tfoot>
