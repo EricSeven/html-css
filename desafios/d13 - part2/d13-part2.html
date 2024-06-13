@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 13 - pat2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th, .average{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        .content{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        .discipline{
+            text-align: left;
+        }
+        td{
+            text-align: right;
+        }
+        .average{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio</h1>
+    <table>
+        <caption>Notas</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Area</th>
+                <th scope="col" rowspan="2">Discipline</th>
+                <th scope="colgroup" colspan="2">Note</th>
+                <th scope="col" rowspan="2">Average</th>
+            </tr>
+            <tr>
+                <th>Note 1</th>
+                <th>Note 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th scope="rowgroup" rowspan="5" class="content">Exact Sciences</th>
+            <tr>
+                <td class="discipline">Mathematics</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="discipline">Physical</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="discipline">Chemical</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="discipline">Biology</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="average">Average Exact Sciences</th>
+                <td class="average">0.00</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="content" rowspan="2">Humanities</th>
+                <td class="discipline">History</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="discipline">Geography</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="average">Average Humanities</th>
+                <td class="average">0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

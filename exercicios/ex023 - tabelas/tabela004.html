@@ -30,17 +30,18 @@
     </style>
 </head>
 <body>
+    <h1>Exercício de Tabelas</h1>
     <table>
         <caption>Gosto de filmes Homens e Mulheres</caption>
         <thead>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
         </thead>
         <tbody>
             <!--Mulheres-->
             <tr>
-                <th rowspan="4" class="row">Mulheres</th>
+                <th scope="rowgroup" rowspan="4" class="row">Mulheres</th>
                 <tr>
                     <td>Ana Maria Santos</td>
                     <td>Alien</td>
@@ -62,7 +63,7 @@
             </tr>
             <!--Homens-->
             <tr>
-                <th rowspan="4" class="row">Homens</th>
+                <th scope="rowgroup" rowspan="4" class="row">Homens</th>
                 <tr>
                     <td>Bruno Mendonça</td>
                     <td>Intocáveis</td>
