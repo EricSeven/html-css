@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ysw6alQpltSzbVgLxTE3t-Wnb4t0KZuumg&s" type="image/x-icon">
+    <title>Esxercicio de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-weight: bold;
+            font: 1.2em;
+            padding: 2px;
+        }
+        table{
+            width: 450px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th{
+            text-align: center;
+        }
+        col.cnome{
+            background-color: lightgrey;
+        }
+        .cgroup{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2">
+            <col class="cprofissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Gugu</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Ma-ria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Dean Winchester</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Mecânico</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
